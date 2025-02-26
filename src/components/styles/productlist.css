@@ -1,0 +1,143 @@
+.window-products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.categories-list{
+    display: flex;
+    justify-content: center;
+    
+}
+.categories-list ul a{
+    text-decoration: none;
+    padding: 10px; 
+}
+.home-button{
+    display: flex;
+align-items: center;
+justify-content: center;
+border-color: rgba(216, 150, 7, 0.39);
+border-style: solid;
+border-width: 1px;
+width: 100px;
+
+}
+.home-button button:hover{
+    cursor: pointer;
+}
+.home-back-button{
+    margin: 2%;
+    background: none;
+    border: none;
+ 
+ 
+font-size: 0.8rem;
+font-weight: bold; 
+color: rgb(168, 111, 5); 
+
+
+}
+
+.categories-list ul a.active{
+    color: rgb(172, 3, 3);
+    border-style: solid;
+    border-width: 1px;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   
+   transition: 0.3s ease-in rgb(172, 3, 3);
+}
+.product-cards-window{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.product-cards{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 300px;
+    margin:15px;
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+    border-color: #dfdfdf;
+    border-style: solid;
+    border-width: 1px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
+}
+.product-cards:hover{
+    box-shadow: 0 4px 6px rgba(75, 75, 75, 0.3);
+    transform: translateY(-2px);
+    cursor: pointer;
+
+
+}
+.product-cards h5{
+    color: #252525;
+
+}
+#shop_pid{
+    background: none;
+    border-width: 1px;
+    border-color: rgb(0, 178, 248);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #0090e6;
+}
+#shop_pid:hover{
+    cursor: pointer;
+}
+.product-cards-image{
+    width: 100%;
+    height: 150px;
+}
+.product-cards-image img{
+    width: 100%;
+    height: 150px;
+    object-fit: fill;
+}
+.product-price-container{
+    position: absolute;
+    bottom: 0;
+    
+}
+
+@media(max-width: 768px){
+    .products-showcase{
+        display: flex;
+        flex: 1 1 95%;
+    }
+    
+    .categories-list {
+        /* flex: 1 1 5%; */
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        justify-content: flex-start;
+        
+
+    }
+    .categories-list ul{
+        margin: 0;
+        padding: 0;
+    }
+    .categories-list ul a{
+        display: block;
+    }
+    
+    .product-cards-window{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .product-cards{
+        width: 250px;
+    }
+    
+    
+}

@@ -1,0 +1,95 @@
+.cartWindow{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.cart-display{
+    margin: 10px;
+}
+.cart-display h3, small{
+    margin: 0;
+}
+
+.cart-display small{
+    font-size: 0.7rem;
+}
+.cart-name{
+    width: 100px;
+    height: 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(206, 206, 206);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.carts{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart-card{
+width: 250px;
+height: 280px;
+display: flex;
+flex-direction: column;
+position: relative;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(212, 212, 212);
+border-radius: 5px;
+margin: 10px;
+}
+.cart-card p{
+    margin: 5px;
+    font-size: 0.8rem;
+}
+.cart-image{
+    width: 100%;
+    height: 150px;
+}
+
+.cart-image img{
+    width: 100%;
+    object-fit: fill;
+    height: 150px;
+    border-radius: 5px;
+}
+.cart-buttons{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+}
+
+.cart-buttons button{
+    height: 30px;
+    width: 80px;
+    background: none;
+    border: none;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgb(141, 141, 141);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cart-buttons button:hover{
+    cursor: pointer;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(75, 75, 75, 0.3);
+
+}
+@media(max-width:768px){
+    .carts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

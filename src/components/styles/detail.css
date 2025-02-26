@@ -1,0 +1,115 @@
+.product-details-container{
+    width: 100%;
+    margin: auto;
+}
+
+.back-button{
+    margin: 2%;
+    background: none;
+border: none;    
+box-shadow: 0 8px 16px #fdfdfd;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.back-button:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+
+.product-details{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    gap: 35px;
+}
+
+.item-showcase{
+width: 50%;
+height: 380px;
+}
+
+.item-showcase img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.item-details{
+    width: 50%;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+.item-details h3{
+    color: rgb(63, 63, 63);
+    
+}
+.item-details h5{
+    color: rgb(63, 63, 63);
+    font-size: 0.9rem;
+}
+.item-details h3, h5{
+    margin: 5px;
+}
+
+
+.services-div{
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+}
+.list-services{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.list-services p{
+    font-size: 0.8rem;
+}
+.services-list{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+}
+.services-list p{
+    font-size: 0.8rem;
+}
+.buttons{
+    margin-top: 20px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button{
+width: 100px;
+height: 40px;
+color: white;
+background-color: #ff614a;
+border-radius: 5px;
+border: none;
+margin: 2%;
+
+}
+.buttons button:hover{
+    cursor: pointer;
+}
+
+@media(max-width: 800px){
+    .product-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .item-showcase{
+        height: 280px;
+    }
+}

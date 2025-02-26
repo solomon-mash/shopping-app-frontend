@@ -1,0 +1,49 @@
+.shop{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    height: 50px;
+
+}
+
+.shop-name{
+    display: flex;
+width: 25%;
+align-items: center;
+justify-content: center;
+}
+
+.shop-name:hover{
+    cursor: pointer;
+}
+.right-div{
+display: flex;
+width: 65%;
+align-items: center;
+gap: 8px;
+}
+.search-div{
+    width: 95%;
+    
+}
+.search-div input{
+    height: 30px;
+    width: 70%;
+    outline: none;
+    background: transparent;
+    border-radius: 8px;
+    
+}
+.search-div button{
+    background: transparent;
+    outline: none;
+    border: none;
+}
+#search-bar::placeholder{
+    font-size: 0.7rem;
+}
+
+.cart:hover{
+    cursor: pointer;
+}
