@@ -6,6 +6,7 @@ import { faLock } from "@fortawesome/free-solid-svg-icons/faLock";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {useState, useEffect} from "react";
 import { useNavigate } from "react-router-dom";
+import { ClipLoader } from "react-spinners";
 
 
 
@@ -41,11 +42,15 @@ const Homepage =()=>{
     const visibleCards = 3;
     const navigate = useNavigate(); 
     const [products, setProducts] = useState([]);
+    const [isLoading, setLoading] = useState(true);
+
+
     useEffect(()=>
     {
-        fetch("http://127.0.0.1:8000/api/products/")
+        fetch("https://shopping-backend-ko0d.onrender.com/api/products/")
         .then((response)=> response.json()).then((data)=>{
             setProducts(data);
+            setLoading(false);
         })
         .catch((error)=>console.error("Error Fetching Data", error));
     },
@@ -94,6 +99,8 @@ const Homepage =()=>{
                     <h4> Featured Products </h4>
                     <a href="#view" onClick={() => navigate(`/products/`)}> View All</a>
                 </div>
+                {isLoading ? <ClipLoader color="#3498db" size={50} className="spinner"/> : (
+                
                 <div className="carousel">
                 <button className="carousel-button" onClick={prevSlide}>
     ◀
@@ -101,7 +108,7 @@ const Homepage =()=>{
                     {products.slice(startIndex, startIndex + visibleCards).map((product, index)=>(
                         <div className="carousel-cards" onClick={() => navigate(`/product/${product.product_id}`)}>
                         <div className="carousel-image">
-                        <img src={`http://127.0.0.1:8000/${product.image}`} alt="" id="carousel-image"/>
+                        <img src={`https://res.cloudinary.com/dmvtxjx0v/${product.image}`} alt="" id="carousel-image"/>
                         </div>
 
                         <h5> {product.name}</h5>
@@ -116,6 +123,7 @@ const Homepage =()=>{
     ▶
       </button>
                 </div>
+)}
             </div>
         </div>
     )

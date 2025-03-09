@@ -3,6 +3,8 @@ import './styles/order.css';
 import Header from "./navbar";
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { ClipLoader } from "react-spinners";
+
 
 const Order = ()=>{
 const {order_id} = useParams();
@@ -11,7 +13,7 @@ const [count, setCount] = useState(1);
 const discount = 2;
 const [activeEvent, setEvent] = useState("card");
 const navigate = useNavigate();
-
+const [isLoading, setLoading] = useState(true);
 
 const handleEvent = (event)=>{
     setEvent(event);
@@ -70,11 +72,12 @@ const renderContent = ()=>{
 
 
 useEffect(()=>{
-    fetch("http://127.0.0.1:8000/api/cart/1/")
+    fetch("https://shopping-backend-ko0d.onrender.com/api/cart/1/")
     .then((response)=>response.json())
     .then((data)=>{
     setItems(data.items);
     console.log(data.items);
+    setLoading(false);
 })
     .catch((error)=>console.error(error))
 
@@ -114,11 +117,14 @@ if(!orderItem) return;
             <div className="order-name" onClick={()=>navigate(`/cart`)}>
                 <h5>Your Cart</h5>
             </div>
-                <div className="order-body">
-                
+            {isLoading ? <ClipLoader color="#3498db" size={50} className="spinner"/> : (
+
+            <div className="order-body">
+
                     <div className="order-display">
+
                         <div className="order-image">
-                            <img src={`http://127.0.0.1:8000/${orderItem.product.image}`} alt="" />
+                            <img src={`https://res.cloudinary.com/dmvtxjx0v/${orderItem.product.image}`} alt="" />
                         </div>
                         <div className="order-list">
                         <h5>{orderItem.product.name }</h5>
@@ -169,9 +175,11 @@ if(!orderItem) return;
                                 <button type="submit" > Checkout </button>
                             </div>
                         </div>
+                        
                     </div>
-            </div>
-        </div>
+
+                </div>
+)}</div>
         <div className="main-checkout">
         <div className="checkout-div">
             <div className="checkout-options">

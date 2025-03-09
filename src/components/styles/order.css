@@ -36,7 +36,10 @@ align-items: center;
     margin: 10px;
 
 }
-
+.spinner {
+    
+    margin: 15% auto;
+  }
 .order-details{
     width: 350px;
     height: 250px;

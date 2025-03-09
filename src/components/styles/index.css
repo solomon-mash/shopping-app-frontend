@@ -42,7 +42,10 @@ justify-content: center;
     height: auto;
     max-height: 300px;
 }
-
+.spinner {
+    
+    margin: 15% auto;
+  }
 .services{
     display: flex;
 }

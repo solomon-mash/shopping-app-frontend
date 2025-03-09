@@ -4,17 +4,22 @@ import './styles/detail.css';
 import {useState, useEffect} from "react";
 import {useCart}  from "./CartContext";
 
+import { ClipLoader } from "react-spinners";
+
 const ProductDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [products, setProducts]=useState([]);
+  const [isLoading, setLoading] = useState(true);
 
 
   useEffect(()=>{
-    fetch("http://127.0.0.1:8000/api/products/")
+    fetch("https://shopping-backend-ko0d.onrender.com/api/products/")
     .then((response)=> response.json())
     .then((data)=>{
       setProducts(data);
+      setLoading(false);
+
     })
     .catch((error)=>console.error("Error Fetching Data", error));
     
@@ -23,16 +28,34 @@ const ProductDetails = () => {
   const product = products.find((p) => p.product_id === parseInt(id));
   const { addToCart } = useCart();
 
-  if (!product) return;
+  if (!product) return(
+    <div>
+         <div className="product-details-container">
+      
+      <button className="back-button" onClick={() => navigate(-1)}>
+          ← Back to Products
+        </button>
+          <div className="spinner-center">
+             <ClipLoader color="#3498db" size={50} className="spinner"/>
+             </div>
+        </div>
+
+    </div>
+  )
 
   return (
+
+    
     <div className="product-details-container">
+      
     <button className="back-button" onClick={() => navigate(-1)}>
         ← Back to Products
       </button>
+      {isLoading ? <ClipLoader color="#3498db" size={50} className="spinner"/> : (
+
       <div className="product-details">
         <div className="item-showcase">
-          <img src={`http://127.0.0.1:8000${product.image}`} alt="" />
+          <img src={`https://res.cloudinary.com/dmvtxjx0v/${product.image}`} alt="" />
         </div>
         <div className="item-details">
           <h3> {product.name}</h3>
@@ -65,7 +88,7 @@ const ProductDetails = () => {
         </div>
       </div>
 
-      
+                      )}
     </div>
     
     

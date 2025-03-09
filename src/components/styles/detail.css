@@ -22,7 +22,16 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     gap: 35px;
 }
+.spinner {
+    
+    margin: 15% auto;
+  }
 
+  .spinner-center{
+    width: 100%;
+  display: flex;
+  align-items: center;
+}
 .item-showcase{
 width: 50%;
 height: 380px;
@@ -105,11 +114,19 @@ margin: 2%;
     .product-details{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
 
     }
     .item-showcase{
         height: 280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 260px;
+    }
+    .item-details{
+        width: 250px;
+
     }
 }
