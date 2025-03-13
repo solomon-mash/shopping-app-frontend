@@ -17,6 +17,10 @@ justify-content: center;
 .shop-name:hover{
     cursor: pointer;
 }
+
+.shop-name h2{
+    font-size: 1.0rem;
+}
 .right-div{
 display: flex;
 width: 65%;
@@ -46,4 +50,10 @@ gap: 8px;
 
 .cart:hover{
     cursor: pointer;
+}
+
+@media(max-width: 500px){
+    .account{
+        display: none;
+    }
 }
