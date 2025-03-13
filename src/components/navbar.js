@@ -11,7 +11,7 @@ const navigate = useNavigate();
 
     <div className="shop">
               <div className="shop-name" onClick={()=>navigate(`/`)}> 
-              <h2> E-Shop </h2>
+              <h2> ShopNest </h2>
               </div>
               <div className='right-div'>
               <div className='search-div'>

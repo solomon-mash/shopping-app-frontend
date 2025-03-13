@@ -27,7 +27,7 @@ const ShopDetail = ()=>{
     const shop_products = products.find((p)=> p.shop === parseInt(shop_id));
     if (!shop_products) return (
     <div>
-        <Header />;
+        <Header />
         <div className="shop-main-window">
          
              <hr />
