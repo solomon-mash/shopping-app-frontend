@@ -22,9 +22,10 @@
     background-color: #ff614a;
     color: white;
     outline: none;
-    height: 8vh;
+    height: 7vh;
     border-radius: 8px;
     width: 25%;
+    min-width: 85px;
 }
 .banner-description button:hover{
     cursor: pointer;

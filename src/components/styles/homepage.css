@@ -28,9 +28,30 @@ transition: transform 0.3 ease;
      cursor: pointer;
      transform: translateY(-1px);
 }
+.blog-window {
+    margin: 2%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 76vh; 
+    background-color: #ffebe8;
+  }
+  
+  .blog-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
 
 @media(max-width:768px){
     .nav-contents{
         display: none;
+    }
+    .blog-window{
+        height: 88vh;
     }
 }

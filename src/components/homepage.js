@@ -16,16 +16,42 @@ function App (){
       case 'Home':
         return <Homepage />;
       case 'Blog':
-        return <div> Blog </div>; 
+        return <div> 
+          <div className="blog-window">
+            <div className='blog-content'> 
+            <h4> Coming Soon </h4>
+            </div>
+          </div>
+        </div>; 
       case 'Contact':
-        return <div> Contact </div>; 
+        return <div> <div className="blog-window">
+        <div className='blog-content'> 
+        <h4> Coming Soon </h4>
+        </div>
+      </div>
+      </div>; 
 
       case 'Sale':
-        return<div> Sales </div>; 
+        return<div> <div className="blog-window">
+        <div className='blog-content'> 
+        <h4> Coming Soon </h4>
+        </div>
+      </div>
+      </div>; 
       case 'Seller':
-        return <div> Seller </div>; 
+        return <div> <div className="blog-window">
+        <div className='blog-content'> 
+        <h4> Coming Soon </h4>
+        </div>
+      </div>
+      </div>; 
       case 'Arrival':
-        return <div> Arrival </div>;
+        return <div> <div className="blog-window">
+        <div className='blog-content'> 
+        <h4> Coming Soon </h4>
+        </div>
+      </div>
+      </div>;
      
       default:
         return <div>Page not found</div>;
