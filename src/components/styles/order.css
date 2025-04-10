@@ -284,7 +284,9 @@ padding: 5px;
     height: 250px;
     object-fit: fill;
    }
-   
+   .count-div, .total-price{
+    margin: 10px;
+   }
    .main-checkout{
     display: flex;
     align-items: flex-start;
