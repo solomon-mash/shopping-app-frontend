@@ -76,8 +76,8 @@ useEffect(()=>{
     fetch("https://shopping-backend-ko0d.onrender.com/api/products/")
     .then((response)=>response.json())
     .then((data)=>{
-    setItems(data.items);
-    console.log(data.items);
+    setItems(data);
+    console.log(data);
     setLoading(false);
 })
     .catch((error)=>console.error(error))
