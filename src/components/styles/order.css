@@ -261,7 +261,7 @@ padding: 5px;
 
     .order-display{
         /* width: 250px; */
-        width: 80%;
+        width: 92%;
         display: flex;
         flex-direction: column;
         height: auto;
@@ -279,7 +279,15 @@ padding: 5px;
     height: 250px;
     object-fit: fill;
    }
-   
+   .order-details{
+    width: 92%;
+    height: 250px;
+   }
+   .summary-window{
+width: 92%;
+height: 250px;
+
+}
    .main-checkout{
     display: flex;
     align-items: flex-start;
