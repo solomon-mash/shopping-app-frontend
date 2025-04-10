@@ -24,7 +24,7 @@ align-items: center;
     display: flex;
     justify-content: center;
     background-color: green;
-    width: 95%;
+    width: 100%;
 }
 
 .order-display{
@@ -44,7 +44,7 @@ align-items: center;
   align-items: center;
 }
 .order-details{
-    width: 350px;
+    width: 320px;
     height: 250px;
     margin: auto 0px;
 
