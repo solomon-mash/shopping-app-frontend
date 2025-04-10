@@ -1,11 +1,11 @@
-.order-content{
+/* .order-content{
     margin: 10px;
   
-}
+} */
 .order-main{
+    margin: 0px;
     width: 100%;
     height: auto;
-    background-color: red;
 }
 .order-name{
     width: 100px;
