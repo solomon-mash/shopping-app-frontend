@@ -23,7 +23,6 @@ align-items: center;
 .order-body{
     display: flex;
     justify-content: center;
-    background-color: green;
     width: 100%;
 }
 
@@ -34,8 +33,8 @@ align-items: center;
     border-color: rgb(206, 206, 206);
     border-style: solid;
     border-width: 1px;
-    padding: 10px;
-    margin: 10px;
+    padding: 7x;
+    margin: 7px;
 
 }
 .spinner-center{
