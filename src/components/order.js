@@ -41,7 +41,7 @@ const renderContent = ()=>{
                         </div>
 
                     </div>
-                    <h5> Amount: ${orderItem.product.price*count - discount}</h5>
+                    <h5> Amount: ${orderItem.price*count - discount}</h5>
 
                     <div className="proceed-button">
                     <button> Proceed </button>
@@ -57,7 +57,7 @@ const renderContent = ()=>{
                         <small> Enter Phone Number Below and check for popup on your device to proceed with payment</small>
                         <input type="text" id="input-options" placeholder="+254" />
 
-                        <h5> Amount: ${orderItem.product.price*count - discount}</h5>
+                        <h5> Amount: ${orderItem.price*count - discount}</h5>
                     </div>
                     <div className="proceed-button">
                         <button> Proceed </button>
@@ -128,7 +128,7 @@ if(!orderItem) return (<div><p> not found </p></div>);
                             <img src={`https://res.cloudinary.com/dmvtxjx0v/${orderItem.image}`} alt="" />
                         </div>
                         <div className="order-list">
-                        <h5>{orderItem.product.name }</h5>
+                        <h5>{orderItem.name }</h5>
                             <small>{count} items</small>
                         <div className="order-buttons">
                             <div className="count-div">
@@ -139,7 +139,7 @@ if(!orderItem) return (<div><p> not found </p></div>);
                                 <button onClick={increment} ><b> + </b> </button>
                             </div>
                             <div className="total-price">
-                                <h5> $ {orderItem.product.price*count}</h5>
+                                <h5> $ {orderItem.price*count}</h5>
                             </div>
                         </div>
                         </div>
@@ -152,7 +152,7 @@ if(!orderItem) return (<div><p> not found </p></div>);
                                     <table>
                                         <tr>
                                             <td> Subtotal ({count} items)</td>
-                                            <td> $ {count * orderItem.product.price}</td>
+                                            <td> $ {count * orderItem.price}</td>
                                         </tr>
                                         <tr>
                                             <td> Shopping Discount </td>
@@ -166,7 +166,7 @@ if(!orderItem) return (<div><p> not found </p></div>);
                                     <hr />
                                     <div className="table-calculation">
                                         <h5> Amount </h5>
-                                        <h5> $ {count * orderItem.product.price - discount}</h5>
+                                        <h5> $ {count * orderItem.price - discount}</h5>
                                     </div>
                                    
                                 </div>
