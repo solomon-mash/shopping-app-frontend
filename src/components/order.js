@@ -125,7 +125,7 @@ if(!orderItem) return (<div><p> not found </p></div>);
                     <div className="order-display">
 
                         <div className="order-image">
-                            <img src={`https://res.cloudinary.com/dmvtxjx0v/${orderItem.product.image}`} alt="" />
+                            <img src={`https://res.cloudinary.com/dmvtxjx0v/${orderItem.image}`} alt="" />
                         </div>
                         <div className="order-list">
                         <h5>{orderItem.product.name }</h5>
