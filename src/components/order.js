@@ -107,7 +107,7 @@ const decrement = ()=>{
     
     
 }
-const orderItem = items.find((p)=>p.product.product_id === parseInt(order_id));
+const orderItem = items.find((p)=>p.product_id === parseInt(order_id));
 if(!orderItem) return;
  return(
     <div className="order-main">
