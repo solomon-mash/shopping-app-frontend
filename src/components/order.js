@@ -44,7 +44,7 @@ const renderContent = ()=>{
                     <h5> Amount: ${orderItem.price*count - discount}</h5>
 
                     <div className="proceed-button">
-                    <button> Proceed To Checkout Below</button>
+                    <button> Proceed</button>
 
                     </div>
                 </div>
@@ -185,7 +185,7 @@ if(!orderItem) return (
                                 
                             </div>
                             <div className="checkout-button">
-                                <button type="submit"> Checkout </button>
+                                <button type="submit"> Proceed To Checkout Below </button>
                             </div>
                         </div>
                         
