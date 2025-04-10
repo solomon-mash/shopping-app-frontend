@@ -24,7 +24,7 @@ align-items: center;
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
 }
 
 .order-display{
@@ -55,7 +55,7 @@ align-items: center;
 }
 .order-image{
     height: 250px;
-    width: 50%;
+    width: 60%;
 }
 .order-image img{
     width: 100%;
@@ -64,7 +64,7 @@ align-items: center;
 }
 .order-list{
     height: 250px;
-    width: 30%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     position: relative;
