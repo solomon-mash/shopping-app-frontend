@@ -201,7 +201,7 @@ width: 100%;
 .credit-card-details{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     gap: 10px;
     padding: 5px;
 }
@@ -235,6 +235,7 @@ width: 100%;
     flex-direction: column;
 margin-top: 50px;
 padding: 5px;
+width: 90%;
 
 }
 .mpesa-content{
@@ -242,6 +243,7 @@ padding: 5px;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    width: 100%;
 
 }
 .mpesa-content h4, small{
