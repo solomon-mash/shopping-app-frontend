@@ -257,7 +257,9 @@ padding: 5px;
     }
 
     .order-display{
-        width: 350px;
+        /* width: 350px; */
+        width: 280px;
+
     }
    .order-image{
     width: 200px;
