@@ -72,7 +72,7 @@ const renderContent = ()=>{
 
 
 useEffect(()=>{
-    fetch("https://shopping-backend-ko0d.onrender.com/api/cart/1/")
+    fetch("https://shopping-backend-ko0d.onrender.com/api/products/")
     .then((response)=>response.json())
     .then((data)=>{
     setItems(data.items);
