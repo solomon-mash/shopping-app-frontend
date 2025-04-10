@@ -260,13 +260,14 @@ padding: 5px;
     }
 
     .order-display{
-        /* width: 350px; */
+        /* width: 250px; */
         width: 100%;
+        display: flex;
+        flex-direction: column;
 
     }
    .order-image{
-    /* width: 200px;
-    height: 100px; */
+    width: 100%;
     height: 250px;
     width: 50%;
    }
@@ -274,10 +275,11 @@ padding: 5px;
     /* width: 200px;
     height: 250px;
     object-fit: fill; */
-    width: 90%;
+    width: 100%;
     height: 250px;
     object-fit: fill;
    }
+   
    .main-checkout{
     display: flex;
     align-items: flex-start;
