@@ -32,11 +32,11 @@ const renderContent = ()=>{
                     <div className="credit-card">
                         <div className="expire-date">
                             Expire date
-                            <input id="input-options" type="text" placeholder="MM/YY"/>
+                            <input id="credit-input-options" type="text" placeholder="MM/YY"/>
                         </div>
                         <div className="cvc-code">
                             CVC Code 
-                            <input id="input-options" type="number" placeholder="0000" />
+                            <input id="credit-input-options" type="number" placeholder="0000" />
 
                         </div>
 
