@@ -28,7 +28,7 @@ align-items: center;
 }
 
 .order-display{
-    width: 40%;
+    width: 30%;
     height: 250px;
     display: flex;
     border-color: rgb(206, 206, 206);
@@ -55,7 +55,7 @@ align-items: center;
 }
 .order-image{
     height: 250px;
-    width: 40%;
+    width: 50%;
 }
 .order-image img{
     width: 100%;
