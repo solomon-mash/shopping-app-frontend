@@ -211,6 +211,7 @@ width: 100%;
     display: flex;
     justify-content: center;
     width: 100%;
+    color: white;
 }
 #input-options{
     height: 30px;
@@ -219,6 +220,7 @@ width: 100%;
     width: 150px;
     height: 40px;
     border-radius: 5px;
+    background-color: #021133;
 }
 .mpesa-div{
     display: flex;
