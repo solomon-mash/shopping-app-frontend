@@ -80,7 +80,10 @@ const ProductDetails = () => {
           
 
           <div className="buttons">
-        <button className="order-button">Order Now</button>
+        <button className="order-button" onClick={(e)=>{
+          e.stopPropagation();
+          navigate(`/cart/order/${product.id}`)
+        }}>Order Now</button>
         <button className="cart-button" onClick={()=>addToCart(product.product_id)}>Add to Cart</button>
       </div>
 
