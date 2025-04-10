@@ -39,7 +39,7 @@ const Cart = () => {
                             <div className="cart-buttons">
                             <button onClick={(e)=> {
                                 e.stopPropagation();
-                                navigate(`/cart/order/${item.product_id}`)
+                                navigate(`/cart/order/${item.product.product_id}`)
                             }}> Order Now </button>
 
                             <button onClick={() => removeFromCart(item.id)}>Remove</button>
