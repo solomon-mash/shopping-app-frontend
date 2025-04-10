@@ -1,5 +1,5 @@
 .order-content{
-    margin: 10px;
+    /* margin: 10px; */
   
 }
 
@@ -23,6 +23,7 @@ align-items: center;
 .order-body{
     display: flex;
     justify-content: center;
+    background-color: green;
 }
 
 .order-display{
