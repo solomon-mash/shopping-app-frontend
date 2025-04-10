@@ -185,7 +185,7 @@ if(!orderItem) return (
                                 
                             </div>
                             <div className="checkout-button">
-                                <button type="submit" onClick={alert("Thank You for shopping with us")}> Checkout </button>
+                                <button type="submit"> Checkout </button>
                             </div>
                         </div>
                         
