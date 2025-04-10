@@ -55,10 +55,10 @@ align-items: center;
 }
 .order-image{
     height: 250px;
-    width: 60%;
+    width: 50%;
 }
 .order-image img{
-    width: 100%;
+    width: 90%;
     height: 250px;
     object-fit: fill;
 }
