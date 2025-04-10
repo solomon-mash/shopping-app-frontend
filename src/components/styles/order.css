@@ -2,7 +2,11 @@
     margin: 10px;
   
 }
-
+.order-main{
+    width: 100%;
+    height: auto;
+    background-color: red;
+}
 .order-name{
     width: 100px;
     height: 40px;
@@ -227,7 +231,7 @@ width: 100%;
     height: 30px;
 }
 #credit-input-options{
-    width: 100%;
+    width: 92%;
     height: 30px;
 }
 .proceed-button button{
@@ -266,7 +270,6 @@ width: 90%;
         flex-direction: column;
         justify-content: center;
         width: 95%;
-        background-color: green;
     }
 
     .order-display{
