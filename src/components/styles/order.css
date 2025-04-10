@@ -1,6 +1,6 @@
 .order-content{
     /* margin: 10px; */
-    width: 100%;
+    width: 95%;
 }
 .order-main{
     margin: 0px;
@@ -222,8 +222,9 @@ width: 100%;
 .proceed-button{
     position: absolute;
     bottom: 0px;
+    left: 2px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     width: 100%;
     color: white;
 }

@@ -124,7 +124,7 @@ if(!orderItem) return (
     </div>);
  return(
     <div className="order-main">
-        {/* <Header /> */}
+        <Header />
 
         <div className="order-content">
             <div className="order-name" onClick={()=>navigate(`/cart`)}>
