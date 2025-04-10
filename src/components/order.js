@@ -109,7 +109,19 @@ const decrement = ()=>{
     
 }
 const orderItem = items.find((p)=>p.product_id === parseInt(order_id));
-if(!orderItem) return (<div><p> not found </p></div>);
+if(!orderItem) return (
+<div>
+         <div className="order-details-container">
+      
+      <button className="back-button" onClick={() => navigate(-1)}>
+          ← Back to Products
+        </button>
+          <div className="spinner-center">
+             <ClipLoader color="#3498db" size={50} className="spinner"/>
+             </div>
+        </div>
+
+    </div>);
  return(
     <div className="order-main">
         <Header />
