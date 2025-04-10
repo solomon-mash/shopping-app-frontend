@@ -14,6 +14,7 @@ const discount = 2;
 const [activeEvent, setEvent] = useState("card");
 const navigate = useNavigate();
 const [isLoading, setLoading] = useState(true);
+console.log(order_id);
 
 const handleEvent = (event)=>{
     setEvent(event);
@@ -77,7 +78,6 @@ useEffect(()=>{
     .then((data)=>{
     setItems(data.items);
     console.log(data.items);
-    console.log(order_id);
     setLoading(false);
 })
     .catch((error)=>console.error(error))
