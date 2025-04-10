@@ -87,7 +87,7 @@ align-items: center;
     border-style: solid;
     border-width: 1px;
     border-color: rgb(204, 204, 204);
-    width: 80px;
+    width: 30%;
 }
 .count{
     display: flex;
@@ -104,7 +104,7 @@ align-items: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 150px;
+    min-width: 30%;
 }
 
 .summary-window{
