@@ -77,6 +77,7 @@ useEffect(()=>{
     .then((data)=>{
     setItems(data.items);
     console.log(data.items);
+    console.log(order_id);
     setLoading(false);
 })
     .catch((error)=>console.error(error))
@@ -108,7 +109,7 @@ const decrement = ()=>{
     
 }
 const orderItem = items.find((p)=>p.product_id === parseInt(order_id));
-if(!orderItem) return;
+if(!orderItem) return (<div><p> not found </p></div>);
  return(
     <div className="order-main">
         <Header />
